@@ -14,9 +14,11 @@ form.addEventListener('submit', function(e) {
 	let button = document.createElement('button');
 
 	button.innerText = 'Delete This Meme';
+	button.classList.add('button');
 	bottomText.innerText = bottomInput.value;
 	bottomText.classList.add('bottom-text');
-	topText.classList.add('top-text');
+	bottomText.classList.add('text');
+	topText.classList.add('text');
 	topText.innerText = topInput.value;
 	img.setAttribute('src', imgURL.value);
 
